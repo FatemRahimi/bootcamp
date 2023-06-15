@@ -1,5 +1,5 @@
-document.querySelector("button").addEventListener("click", helloHandle);
 
-function helloHandle(){
-    alert("go away")
+for (let i=0; i < document.querySelectorAll(".drum").length; i++){
+document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+    alert("welcome")})
 }
