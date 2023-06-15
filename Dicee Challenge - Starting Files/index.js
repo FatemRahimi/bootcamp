@@ -18,3 +18,12 @@ var randomImageSource2="images/" + randomDiceImage;
 image1= document.querySelectorAll("img")[1];
 image1.setAttribute("src", randomImageSource2)
 
+if (randomNum > randomNum1){
+    document.querySelector("h1").innerHTML="😍 YOU lost"
+
+
+    }else if (randomNum < randomNum1){
+        document.querySelector("h1").innerHTML="🤩you win"
+    }else{  
+        
+        document.querySelector("h1").innerHTML="equal"}
