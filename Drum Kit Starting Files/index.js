@@ -31,7 +31,7 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         break;
 
         case "k":
-        var kick = new Audio ("sounds/kick.mp3");
+        var kick = new Audio ("sounds/kick-bass.mp3");
         kick.play();
         break;
 
@@ -43,4 +43,8 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         default:console.log("buttonInnerHTML");
 
 }});
+
+document.addEventListener("keypress", function(event) {
+    console.log(event)
+  });
 }
