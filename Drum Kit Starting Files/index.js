@@ -3,9 +3,20 @@ for (let i=0; i < document.querySelectorAll(".drum").length ; i++){
 document.querySelectorAll(".drum")[i].addEventListener("click", function(){
    
     var  buttonInnerHTML= this.innerHTML;
+      makeSound(buttonInnerHTML);
 
-   switch(buttonInnerHTML){
-    case "w":
+});
+}
+
+
+document.addEventListener("keypress",function (event) {
+    makeSound(event.key);
+});
+
+function makeSound(key){
+
+    switch(key){
+        case "w":
         var tom1 = new Audio ("sounds/tom-1.mp3");
         tom1.play();
         break;
@@ -40,11 +51,4 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         snare.play();
         break;
 
-        default:console.log("buttonInnerHTML");
-
-}});
-
-document.addEventListener("keypress", function(event) {
-    console.log(event)
-  });
-}
+        default: console.log("elseone")}}
