@@ -16,7 +16,8 @@ document.addEventListener("keypress",function (event) {
 });
 
  function buttonAnimation(currentKey){
-    document.querySelector("." + currentKey).classList.add(pressed);
+   var addClass= document.querySelector("." + currentKey);
+    addClass.classList.add("pressed');
 
  }
 
