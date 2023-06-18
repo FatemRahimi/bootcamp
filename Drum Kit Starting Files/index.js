@@ -4,6 +4,7 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
    
     var  buttonInnerHTML= this.innerHTML;
       makeSound(buttonInnerHTML);
+      buttonAnimation(buttonInnerHTML);
 
 });
 }
@@ -11,7 +12,13 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
 document.addEventListener("keypress",function (event) {
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
+
+ function buttonAnimation(currentKey){
+    document.querySelector("." + currentKey).classList.add(pressed);
+
+ }
 
 function makeSound(key){
 
