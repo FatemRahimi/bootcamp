@@ -19,7 +19,10 @@ document.addEventListener("keypress",function (event) {
    var addClass= document.querySelector("." + currentKey);
     addClass.classList.add("pressed");
 
-  
+    setTimeout (function(){
+        addClass.classList.remove("pressed");
+    }, 200)}
+
 
 
 function makeSound(key){
