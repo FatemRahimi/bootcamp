@@ -1,1 +1,1 @@
-$("h1").addClass("new-class");
+$("a").attr("href","https://www.google.com");
