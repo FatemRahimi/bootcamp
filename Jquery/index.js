@@ -1,1 +1,4 @@
-$("a").attr("href","https://www.google.com");
+$("button").on("click", function(){
+    $("h1").fadeOut();
+
+})
