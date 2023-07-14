@@ -1,4 +1,5 @@
-var generateName = require('sillyname');
-var sillyName = generateName();
+import generateName from "sillyName";
+const siilyname =generateName();
+
 
 console.log(`my name is ${sillyName}`)
