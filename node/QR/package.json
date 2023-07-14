@@ -1,0 +1,7 @@
+{
+  type:"modual";
+  "dependencies": {
+    "inquirer": "^9.2.8",
+    "qr-image": "^3.2.0"
+  }
+}
