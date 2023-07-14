@@ -1,7 +1,6 @@
 {
   "name": "npm",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,6 +9,9 @@
   "author": "fatemeh",
   "license": "ISC",
   "dependencies": {
-    "sillyname": "^0.1.0"
-  }
+    "sillyname": "^0.1.0",
+    "superheroes": "^3.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
